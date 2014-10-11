@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "First Real Post"
-date:   2014-10-06 20:50:06
+title:  "Blogging With Jekyll"
+date:   2014-10-11 23:59:59
 categories: web development
 ---
 Cake carrot cake chocolate. Dessert jelly soufflé bear claw caramels apple pie croissant wafer. Pastry lollipop cookie jujubes dragée tootsie roll. Jelly beans lollipop cupcake halvah tootsie roll bonbon sugar plum.
