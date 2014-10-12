@@ -4,21 +4,35 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+<!--   <h1 class="page-heading">Posts</h1> -->
 
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+          <p class="post-meta">
+            <span class="fa fa-calendar"></span>
+          <span class="meta-label">{{ page.date | date: "%b %-d, %Y" }}</span>
+          {% if page.author %} 
+            <span class="fa fa-folder-open-o"></span>
+            <span class="meta-label">{{ page.author }}</span>
+          {% endif %}
+          {% if page.meta %}
+            <span class="fa fa-folder-open-o"></span>
+            <span class="meta-label">{{ page.meta }}</span>
+          {% endif %}
+          {% if page.categories %}
+            <span class="fa fa-folder-open-o"></span>
+            <span class="meta-label">{{ page.categories }}</span>
+          {% endif %}
+          <br />
+          <span class="fa fa-facebook-square facebook share-highlight"></span>
+          <span class="fa fa-twitter-square twitter share-highlight"></span>
+        </p>
         <p>{{ post.excerpt }}</p>
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>

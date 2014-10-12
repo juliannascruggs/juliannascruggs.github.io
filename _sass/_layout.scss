@@ -3,9 +3,9 @@
  */
 .site-header {
 //    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    border-bottom: 1px solid $grey-color-dark;
     min-height: 56px;
-//    background: red;
+    background: #2929A3;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -20,7 +20,8 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+//        color: $grey-color-dark;
+        color: $white-color;
     }
 }
 
@@ -33,7 +34,7 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: $white-color;
         line-height: $base-line-height;
 
         /* Gaps between nav items, but not on the first one*/
@@ -173,23 +174,45 @@
 .post-list {
     margin-left: 0;
     list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
 }
 
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+.meta-label {
+    padding-right: 10px;
 }
 
-.post-link {
-    display: block;
-    font-size: 24px;
+/*
+ *Share Thumbnails
+*/
+.facebook {
+    color: #3b5998;
+    padding-right: 3px;
+}
+.twitter {
+    color: #00aced;
 }
 
-
+/*
+ *share icon highlight
+*/
+.share-highlight {
+  -webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+       -o-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+          transition: all .5s ease;
+  -webkit-filter: opacity(50%);
+} 
+.share-highlight:hover {
+  -webkit-filter: opacity(100%);
+}
 
 /**
  * Posts

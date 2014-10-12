@@ -6,13 +6,16 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
-<!--        <ul class="contact-list">
-          <li>{{ site.title }}</li>
+
+      <ul class="contact-list">
+        <li class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></li>
+<!--          <li>{{ site.title }}</li>
            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li> -->
         </ul>
       </div>
 
       <div class="footer-col  footer-col-2">
+<!--         <p class="text">{{ site.description }}</p> -->
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
@@ -44,9 +47,8 @@
           {% endif %}
         </ul>
       </div>
-
       <div class="footer-col  footer-col-3">
-        <p class="text">{{ site.description }}</p>
+
       </div>
     </div>
 
