@@ -20,8 +20,8 @@ $spacing-unit:     30px;
 $text-color:       #111;
 $background-color: #fdfdfd;
 $background-image: url(../images/texture_color.png);
-$brand-color:      #2929A3;
-$brand-color-secondary: #D46419;
+$brand-color:      #4E2828;
+$brand-color-secondary: #19AFD4;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -54,7 +54,7 @@ $on-laptop:        800px;
     }
 }
 .page-background {
-    @include background('../images/texture.png');
+    @include background('../images/texture_color.png');
 }
 
 
