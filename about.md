@@ -3,20 +3,26 @@ layout: page
 title: About
 permalink: /about/
 ---
-<div class="info">
+<div class="about">
     <div class="left">
-        <img src="images/portrait_square.png" align="left">
+        <img src="../images/portrait_square.png" align="left">
     </div>
-    <div class="post">
-        <p id="title">Julianna Scruggs</p>
-        <p id="subtitle">Austin, TX</p>
-        <p id="p1"><span>Occupation</span>Designer and yogini</p>
-        <p id="p1"><span>Hobbies</span>Piano, bead work, drawing, programming and nutrition. 
+<!--     <div class="info"> -->
+    <div>
+
+        <h2>Julianna Scruggs</h2>
+
+<!--         <p class="title">Julianna Scruggs</p> -->
+        <p class="subtitle">Austin, TX</p>
+        <p class="p1"><span class="about-details">Occupation</span>Designer and yogini</p>
+        <p class="p1"><span class="about-details">Hobbies</span>Yoga, drawing, programming and nutrition. 
         </p>
     </div>
 </div>
-<div class="post">
-    <ul><span id="title">More About Me</span>
+<!-- <div class="info"> -->
+<div>
+<!--     <ul><span class="title">More About Me</span> -->
+    <ul><h4>More About Me</h4>
         <li>I grew up on a farm, in Canada.</li> 
         <li>That farm is now home to Blackberry.</li>
         <li>I have a design degree from UT Austin.</li>

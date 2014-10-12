@@ -272,8 +272,62 @@
 /*
 * About Page
 */
-
-
+.about {
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+    width:100%;
+}
+.left {
+    width: 25%;
+    max-height: 180px;
+    max-width: 180px;
+    float: left;
+    margin-top: 15px;
+    margin-right: 40px;
+}
+.info {
+    width: 70%;
+    height: 100%;
+    background-color: #fffeef;
+    box-shadow: 0 0 8px #a2a2a2;
+    border-radius: 1px;
+    margin: auto;
+    padding: 0px 10px 16px 10px;
+    float: left;
+}
+.info p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: #252525;
+/*    font-family: 'Roboto', Futura, Helvetica Neue, Helvetica, Arial, sans-serif;*/
+}
+span.about-details {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+.title {
+    font-size: 18pt;
+    letter-spacing: 0.08em;
+}
+.subtitle {
+    margin-top: -20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.p1 {
+    padding-top: 5px;
+    margin-top: -5px;
+    min-width:100px;
+}
+.left img {
+    height: 100%;
+    width:100%;
+    border-radius: 100%;
+}
 
 
 
