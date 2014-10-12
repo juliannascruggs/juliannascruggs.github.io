@@ -7,15 +7,21 @@
 
 // Our variables
 $base-font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+$condensed-font-family: "Open Sans Condensed", "Helvetica Neue Condensed", "Arial Narrow", Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
+
+$header-font-family: "Ubuntu Condensed", "Arial Narrow", Arial, sans-serif;
+$header-font-size: 26px;
 
 $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$background-image: url(../images/texture_color.png);
+$brand-color:      #2929A3;
+$brand-color-secondary: #D46419;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -40,6 +46,16 @@ $on-laptop:        800px;
     }
 }
 
+@mixin background($imgpath,$position:0 0,$repeat: repeat) {
+    background: {
+        image: url($imgpath);
+        position: $position;
+        repeat: $repeat;
+    }
+}
+.page-background {
+    @include background('../images/texture.png');
+}
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -48,3 +64,5 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+@import
+		url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed|Open+Sans+Condensed:300|Open+Sans:400,300,600);

@@ -13,8 +13,10 @@
 
 .site-title {
     font-size: 26px;
+    font-family: $condensed-font-family;
+    font-weight: 300;
     line-height: 56px;
-    letter-spacing: -1px;
+    letter-spacing: 1px;
     margin-bottom: 0;
     float: left;
 
@@ -183,6 +185,12 @@
     > li {
         margin-bottom: $spacing-unit;
     }
+
+    .facebook,
+    .twitter {
+        font-size: 16px;
+        vertical-align: middle;
+    }
 }
 .meta-label {
     padding-right: 10px;
@@ -197,20 +205,21 @@
 }
 .twitter {
     color: #00aced;
+    padding-right: 10px;
 }
 
 /*
  *share icon highlight
 */
 .share-highlight {
-  -webkit-transition: all .5s ease;
-     -moz-transition: all .5s ease;
-       -o-transition: all .5s ease;
-      -ms-transition: all .5s ease;
-          transition: all .5s ease;
   -webkit-filter: opacity(50%);
 } 
 .share-highlight:hover {
+  -webkit-transition: all .7s ease;
+     -moz-transition: all .7s ease;
+       -o-transition: all .7s ease;
+      -ms-transition: all .7s ease;
+          transition: all .7s ease;
   -webkit-filter: opacity(100%);
 }
 
@@ -222,7 +231,7 @@
 }
 
 .post-title {
-    font-size: 42px;
+    font-size: 38px;
     letter-spacing: -1px;
     line-height: 1;
 
@@ -231,6 +240,7 @@
     }
 }
 
+.post-link,
 .post-content {
     margin-bottom: $spacing-unit;
 
