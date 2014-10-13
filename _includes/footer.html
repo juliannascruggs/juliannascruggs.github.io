@@ -2,8 +2,6 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
 
@@ -30,7 +28,10 @@
             </a>
           </li>
           {% endif %}
-
+        </ul>
+      </div>
+      <div class="footer-col  footer-col-3">
+        <ul class="contact-list">
           {% if site.twitter_username %}
           <li>
             <a href="https://twitter.com/{{ site.twitter_username }}">
@@ -47,10 +48,9 @@
           {% endif %}
         </ul>
       </div>
-      <div class="footer-col  footer-col-3">
-
-      </div>
     </div>
+
+    <h2 class="footer-heading">{{ site.title }}</h2>
 
   </div>
 

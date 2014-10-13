@@ -103,6 +103,7 @@
 .footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
+    font-family: $condensed-font-family;
 }
 
 .contact-list,
@@ -125,18 +126,18 @@
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(33.33% - (#{$spacing-unit} / 2));
+    width:         calc(33.33% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(33.33% - (#{$spacing-unit} / 2));
+    width:         calc(33.33% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(33.33% - (#{$spacing-unit} / 2));
+    width:         calc(33.33% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
@@ -181,9 +182,9 @@
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
-
     > li {
-        margin-bottom: $spacing-unit;
+        margin-top: $spacing-unit;
+
     }
 
     .facebook,
@@ -242,11 +243,10 @@
 
 .post-link,
 .post-content {
-    margin-bottom: $spacing-unit;
+    margin-top: $spacing-unit;
 
     h2 {
         font-size: 32px;
-
         @include media-query($on-laptop) {
             font-size: 28px;
         }
